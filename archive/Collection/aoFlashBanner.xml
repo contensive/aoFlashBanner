@@ -1,0 +1,37 @@
+<Collection name="Flash Banner" guid="{007976B2-6BCA-4B9D-A2CE-B7D70ED0D239}" Version="1">
+  <Interfaces>
+    	<Page name='Flash Banner' guid='{FD351C22-621D-44BA-86CB-004B866A20DE}' Version="1">
+      		<Description>Flash Banner</Description>
+      		<ActiveXDLL>aoFlashBanner.DLL</ActiveXDLL>
+      		<ActiveXProgramID>aoFlashBanner.bannerClass</ActiveXProgramID>
+      		<Content>True</Content>
+      		<Admin>True</Admin>
+		<Otherheadtags><![CDATA[
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+	var flashvars = {};
+	var params = {};
+	var attributes = {};
+	attributes.id = "photoBanner";
+	swfobject.embedSWF("flashBanner.swf", "flashBanner", "100%", "100%", "9.0.0", false, flashvars, params, attributes);
+</script>
+		]]></Otherheadtags>
+		<Argument>Banner Width</Argument>
+		<Argument>Banner Height</Argument>
+    	</Page>
+    	<Page name='flash.xml' guid='{25AE19B8-688C-427C-B194-10D233578382}' Version="1">
+      		<Description>returns the xml for the flash banner</Description>
+      		<ActiveXDLL>aoFlashBanner.DLL</ActiveXDLL>
+      		<ActiveXProgramID>aoFlashBanner.responseClass</ActiveXProgramID>
+      		<RemoteMethod>True</RemoteMethod>
+    	</Page>
+  </Interfaces>
+	<CDef Name="Flash Banners" Active="1" AdminOnly="0" AllowAdd="1" AllowCalendarEvents="0" AllowContentChildTool="0" AllowContentTracking="0" AllowDelete="1" AllowMetaContent="0" AllowTopicRules="0" AllowWorkflowAuthoring="0" AuthoringDataSourceName="Default" AuthoringTableName="FlashContent" ContentDataSourceName="Default" ContentTableName="FlashContent" DefaultSortMethod="By Name" DeveloperOnly="0" DropDownFieldList="Name" EditorGroupName="" Parent="" guid="" isbasecontent="0" >
+		<Field Name="Position" active="True" AdminOnly="False" Authorable="True" Caption="Caption Position Down" DeveloperOnly="False" EditSortPriority="340" FieldType="Text" HTMLContent="False" IndexColumn="0" IndexSortDirection="" IndexSortOrder="0" IndexWidth="" RedirectID="" RedirectPath="" Required="False" TextBuffered="False" UniqueName="False" DefaultValue="" RSSTitle="False" RSSDescription="False" MemberSelectGroupID="0" EditTab="" Scramble="False" LookupList="" NotEditable="False" Password="False" ReadOnly="False" ManyToManyRulePrimaryField="" ManyToManyRuleSecondaryField="" HelpMessage="" IsModified="False" IsBaseField="False" LookupContent="" RedirectContent="" ManyToManyContent="" ManyToManyRuleContent="" ></Field>
+		<Field Name="Link" active="True" AdminOnly="False" Authorable="True" Caption="Link" DeveloperOnly="False" EditSortPriority="310" FieldType="Text" HTMLContent="False" IndexColumn="0" IndexSortDirection="" IndexSortOrder="0" IndexWidth="" RedirectID="" RedirectPath="" Required="False" TextBuffered="False" UniqueName="False" DefaultValue="" RSSTitle="False" RSSDescription="False" MemberSelectGroupID="0" EditTab="" Scramble="False" LookupList="" NotEditable="False" Password="False" ReadOnly="False" ManyToManyRulePrimaryField="" ManyToManyRuleSecondaryField="" HelpMessage="" IsModified="False" IsBaseField="False" LookupContent="" RedirectContent="" ManyToManyContent="" ManyToManyRuleContent="" ></Field>
+		<Field Name="Caption" active="True" AdminOnly="False" Authorable="True" Caption="Caption" DeveloperOnly="False" EditSortPriority="320" FieldType="Text" HTMLContent="False" IndexColumn="0" IndexSortDirection="" IndexSortOrder="0" IndexWidth="" RedirectID="" RedirectPath="" Required="False" TextBuffered="False" UniqueName="False" DefaultValue="" RSSTitle="False" RSSDescription="False" MemberSelectGroupID="0" EditTab="" Scramble="False" LookupList="" NotEditable="False" Password="False" ReadOnly="False" ManyToManyRulePrimaryField="" ManyToManyRuleSecondaryField="" HelpMessage="" IsModified="False" IsBaseField="False" LookupContent="" RedirectContent="" ManyToManyContent="" ManyToManyRuleContent="" ></Field>
+		<Field Name="SortOrder" active="True" AdminOnly="False" Authorable="True" Caption="Sort Order" DeveloperOnly="False" EditSortPriority="350" FieldType="Text" HTMLContent="False" IndexColumn="" IndexSortDirection="" IndexSortOrder="" IndexWidth="" RedirectID="" RedirectPath="" Required="False" TextBuffered="False" UniqueName="False" DefaultValue="" RSSTitle="False" RSSDescription="False" MemberSelectGroupID="" EditTab="" Scramble="False" LookupList="" NotEditable="False" Password="False" ReadOnly="False" ManyToManyRulePrimaryField="" ManyToManyRuleSecondaryField="" HelpMessage="" IsModified="True" IsBaseField="False" LookupContent="" RedirectContent="" ManyToManyContent="" ManyToManyRuleContent="" ></Field>
+		<Field Name="CaptionColor" active="True" AdminOnly="False" Authorable="True" Caption="Caption Color" DeveloperOnly="False" EditSortPriority="330" FieldType="Text" HTMLContent="False" IndexColumn="0" IndexSortDirection="" IndexSortOrder="0" IndexWidth="" RedirectID="" RedirectPath="" Required="False" TextBuffered="False" UniqueName="False" DefaultValue="" RSSTitle="False" RSSDescription="False" MemberSelectGroupID="0" EditTab="" Scramble="False" LookupList="" NotEditable="False" Password="False" ReadOnly="False" ManyToManyRulePrimaryField="" ManyToManyRuleSecondaryField="" HelpMessage="" IsModified="False" IsBaseField="False" LookupContent="" RedirectContent="" ManyToManyContent="" ManyToManyRuleContent="" ></Field>
+		<Field Name="ImageFileName" active="True" AdminOnly="False" Authorable="True" Caption="Image" DeveloperOnly="False" EditSortPriority="300" FieldType="File" HTMLContent="False" IndexColumn="0" IndexSortDirection="" IndexSortOrder="0" IndexWidth="" RedirectID="" RedirectPath="" Required="False" TextBuffered="False" UniqueName="False" DefaultValue="" RSSTitle="False" RSSDescription="False" MemberSelectGroupID="0" EditTab="" Scramble="False" LookupList="" NotEditable="False" Password="False" ReadOnly="False" ManyToManyRulePrimaryField="" ManyToManyRuleSecondaryField="" HelpMessage="" IsModified="False" IsBaseField="False" LookupContent="" RedirectContent="" ManyToManyContent="" ManyToManyRuleContent="" ></Field>
+	</CDef>
+</Collection>
